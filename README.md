@@ -12,4 +12,9 @@ Para o meu projeto, optei por desenvolver um site utilizando HTML, CSS e outras 
 
 Minha solução será uma plataforma web fácil de usar, acessível a partir de qualquer dispositivo com acesso à internet. Quero garantir que os alunos e mentores possam se conectar de forma simples e eficaz, facilitando a colaboração e a troca de conhecimentos.
 
+🌍 Impacto / Impact:
+
+Redução da Taxa de Evasão Escolar: Ao oferecer suporte personalizado e motivador para os alunos, o projeto pode contribuir para a redução da taxa de evasão escolar. A orientação adequada e o apoio emocional podem ajudar os alunos a superar desafios enfretados para sua escolha, aumentando sua motivação e comprometimento com seus estudos.
+
+Aumento da Taxa de Conclusão de Cursos: O acesso a mentores e recursos educacionais de qualidade pode aumentar o numero de alunos que concluíram com sucesso seus cursos. A orientação individualizada e o apoio contínuo podem ajudar os alunos a manter o foco em seus objetivos acadêmicos e a superar quaisquer dificuldades ao longo do caminho.
 
