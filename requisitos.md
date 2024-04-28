@@ -19,7 +19,7 @@
 
 ⏲️ Disponibilidade: A plataforma deve estar disponível 24 horas por dia, 7 dias por semana, garantindo acesso contínuo aos usuários, sem interrupções no serviço.
 
-Este é um exemplo simplificado de requisitos funcionais e não funcionais para sua Plataforma de Mentoria Acadêmica. Certifique-se de adaptar e expandir esses requisitos conforme necessário para atender às necessidades específicas do seu projeto.
+
 
 
 
