@@ -1,0 +1,169 @@
+1. Cadastro de Alunos e Mentores
+Caso de Teste 1: Cadastro bem-sucedido
+
+Descrição: Testar o cadastro de um usuário com informações válidas.
+Passos:
+-Navegar até a página de cadastro.
+-Preencher os campos "Nome", "E-mail" e "Área de Interesse".
+-Clicar no botão "Cadastrar".
+-Resultado Esperado: O usuário é cadastrado com sucesso e redirecionado para a página de confirmação.
+
+Caso de Teste 2: Cadastro com e-mail inválido
+
+Descrição: Testar o cadastro de um usuário com um e-mail inválido.
+Passos:
+-Navegar até a página de cadastro.
+-Preencher os campos "Nome" e "E-mail" com um formato inválido.
+-Preencher o campo "Área de Interesse".
+-Clicar no botão "Cadastrar".
+Resultado Esperado: A plataforma exibe uma mensagem de erro indicando que o e-mail é inválido.
+Caso de Teste 3: Cadastro com campos obrigatórios faltando
+
+Descrição: Testar o cadastro de um usuário sem preencher os campos obrigatórios.
+
+Passos:
+-Navegar até a página de cadastro.
+-Deixar os campos "Nome" e "E-mail" vazios.
+-Preencher o campo "Área de Interesse".
+-Clicar no botão "Cadastrar".
+
+Resultado Esperado: A plataforma exibe mensagens de erro indicando que os campos obrigatórios devem ser preenchidos.
+
+
+2. Atualização de Perfis
+
+Caso de Teste 1: Atualização de perfil bem-sucedida
+
+Descrição: Testar a atualização do perfil com informações válidas.
+
+Passos:
+-Navegar até a página de perfil.
+-Modificar os campos "Experiência" e "Disponibilidade".
+-Clicar no botão "Salvar".
+
+Resultado Esperado: O perfil é atualizado com sucesso e as mudanças são refletidas na visualização do perfil.
+
+Caso de Teste 2: Atualização com dados inválidos
+
+Descrição: Testar a atualização do perfil com dados inválidos.
+
+Passos:
+-Navegar até a página de perfil.
+-Inserir caracteres especiais ou inválidos no campo "Experiência".
+-Clicar no botão "Salvar".
+
+Resultado Esperado: A plataforma exibe uma mensagem de erro indicando que os dados inseridos são inválidos.
+
+Caso de Teste 3: Atualização com campos vazios
+
+Descrição: Testar a atualização do perfil sem preencher os campos obrigatórios.
+
+Passos:
+-Navegar até a página de perfil.
+-Deixar os campos "Experiência" e "Disponibilidade" vazios.
+-Clicar no botão "Salvar".
+
+Resultado Esperado: A plataforma permite a atualização com campos vazios (se permitido) ou exibe mensagens de erro indicando que os campos obrigatórios devem ser preenchidos.
+
+3. Cancelamento de Sessões
+
+Caso de Teste 1: Cancelamento bem-sucedido
+
+Descrição: Testar o cancelamento de uma sessão agendada com sucesso.
+Passos:
+-Navegar até a página de sessões agendadas.
+-Selecionar uma sessão futura.
+-Clicar no botão "Cancelar".
+
+Resultado Esperado: A sessão é cancelada com sucesso e removida da lista de sessões agendadas.
+
+Caso de Teste 2: Cancelamento de sessão passada
+
+Descrição: Testar o cancelamento de uma sessão que já ocorreu.
+
+Passos:
+-Navegar até a página de sessões agendadas.
+-Selecionar uma sessão passada.
+-Clicar no botão "Cancelar".
+
+Resultado Esperado: A plataforma exibe uma mensagem de erro indicando que a sessão não pode ser cancelada porque já ocorreu.
+
+Caso de Teste 3: Cancelamento sem aviso prévio adequado
+
+Descrição: Testar o cancelamento de uma sessão sem o aviso prévio adequado.
+
+Passos:
+-Navegar até a página de sessões agendadas.
+-Selecionar uma sessão que ocorre em menos de 24 horas.
+-Clicar no botão "Cancelar".
+
+Resultado Esperado: A plataforma exibe uma mensagem de erro indicando que a sessão não pode ser cancelada sem o aviso prévio adequado.
+
+
+4. Busca de Mentores
+
+Caso de Teste 1: Busca bem-sucedida por especialização
+
+Descrição: Testar a busca de mentores com base na área de especialização.
+
+Passos:
+-Navegar até a página de busca de mentores.
+-Inserir uma área de especialização no campo de busca.
+-Clicar no botão "Buscar".
+
+Resultado Esperado: A plataforma exibe uma lista de mentores correspondentes à área de especialização inserida.
+
+Caso de Teste 2: Busca com critérios múltiplos
+
+Descrição: Testar a busca de mentores com múltiplos critérios (especialização e disponibilidade).
+
+Passos:
+-Navegar até a página de busca de mentores.
+-Inserir uma área de especialização e disponibilidade.
+-Clicar no botão "Buscar".
+
+Resultado Esperado: A plataforma exibe uma lista de mentores que correspondem a ambos os critérios.
+
+Caso de Teste 3: Busca sem resultados
+
+Descrição: Testar a busca de mentores com critérios que não retornam resultados.
+
+Passos:
+-Navegar até a página de busca de mentores.
+-Inserir critérios específicos que nenhum mentor atende.
+-Clicar no botão "Buscar".
+
+Resultado Esperado: A plataforma exibe uma mensagem indicando que nenhum mentor foi encontrado com os critérios fornecidos.
+
+
+5. Comunicação entre Alunos e Mentores
+
+Caso de Teste 1: Envio de mensagem bem-sucedido
+
+Descrição: Testar o envio de uma mensagem de um aluno para um mentor.
+
+Passos:
+-Navegar até a página de comunicação.
+-Selecionar um mentor.
+-Escrever uma mensagem e clicar em "Enviar".
+-Resultado Esperado: A mensagem é enviada com sucesso e aparece na lista de mensagens.
+
+Caso de Teste 2: Envio de mensagem com campos vazios
+
+Descrição: Testar o envio de uma mensagem sem preencher todos os campos.
+
+Passos:
+-Navegar até a página de comunicação.
+-Selecionar um mentor.
+-Deixar o campo de mensagem vazio.
+-Clicar em "Enviar".
+
+Resultado Esperado: A plataforma exibe uma mensagem de erro indicando que o campo de mensagem não pode estar vazio.
+
+Caso de Teste 3: Carregamento de mensagens
+
+Descrição: Testar o carregamento de mensagens recebidas.
+Passos:
+-Navegar até a página de comunicação.
+-Verificar se as mensagens enviadas e recebidas são carregadas corretamente.
+Resultado Esperado: Todas as mensagens enviadas e recebidas são carregadas e exibidas corretamente.
