@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma de Mentoria</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo-title">
-            <span>Mentoria</span>
+            <span>🌟 Mentoria Acadêmica</span>
         </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#mentoriaAcademica" class="dropbtn">Mentoria Acadêmica</a>
+                    <div class="dropdown-content">
+                        <a href="depoimentos.html">Depoimento</a> <!-- Link corrigido -->
+                        <a href="sobreMentoria.html">Sobre a Mentoria</a>
+                    </div>
+                </li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="cadastro" class="section">
@@ -43,9 +58,7 @@
                 
                 <label for="experiencia">Experiência Acadêmica/Profissional:</label>
                 <textarea id="experiencia" name="experiencia"></textarea>
-                
-                <label for="disponibilidade">Disponibilidade de Horários:</label>
-                <input type="text" id="disponibilidade" name="disponibilidade">
+    
                 
                 <button type="submit">Atualizar</button>
             </form>
@@ -68,7 +81,7 @@
                 <input type="text" id="filtroArea" name="filtroArea">
                 
                 <label for="filtroDisponibilidade">Disponibilidade de Horários:</label>
-                <input type="text" id="filtroDisponibilidade" name="filtroDisponibilidade">
+                <input type="date" id="filtroDisponibilidade" name="filtroDisponibilidade">
                 
                 <button type="submit">Buscar</button>
             </form>
@@ -88,6 +101,7 @@
             </form>
             <div id="historicoMensagens"></div>
         </section>
+        
     </main>
     <script src="script.js"></script>
 </body>

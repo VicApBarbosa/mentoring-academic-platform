@@ -10,24 +10,88 @@ html {
 
 body {
     background-color: #151515;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 header {
     padding: 2%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    border-bottom: 2px solid rgb(237, 231, 231);
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1c1c1c;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Oxanium', cursive;
+    font-size: 2rem;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: rgba(60, 52, 132, 0.8);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1c1c1c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(60, 52, 132, 0.8);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .logo-title {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    border: 2px solid rgb(237, 231, 231);
     padding: 6px;
     font-family: 'Oxanium', cursive;
-    color: whitesmoke;
-    font-size: 2rem;
+    font-size: 3rem; /* Aumente o tamanho da fonte aqui */
+    color: rgba(60, 52, 132, 0.8);
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 main {
@@ -68,6 +132,7 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
+form input[type="date"],
 form textarea,
 form select {
     width: 100%;
@@ -119,5 +184,14 @@ form button:hover {
 
     main {
         padding: 10px 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
     }
 }
