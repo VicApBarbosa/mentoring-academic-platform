@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicação - Plataforma de Mentoria Acadêmica</title>
+    <link rel="stylesheet" href="styleComunicacao.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <span>🌟 Mentoria Acadêmica</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#mentoriaAcademica" class="dropbtn">Mentoria Acadêmica</a>
+                    <div class="dropdown-content">
+                        <a href="depoimentos.html">Depoimento</a>
+                        <a href="sobreMentoria.html">Sobre a Mentoria</a>
+                    </div>
+                </li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="#inicioSessao">Iniciar Sessão</a></li>
+                <li><a href="comunicacao.html">Comunicação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="comunicacao" class="section">
+            <h2>Comunicação com Mentores</h2>
+            <form id="comunicacaoForm" class="form">
+                <label for="mentor">Selecionar Mentor:</label>
+                <select id="mentor" name="mentor" required>
+                    <option value="mentor1">Mentor 1</option>
+                    <option value="mentor2">Mentor 2</option>
+                    <option value="mentor3">Mentor 3</option>
+                </select>
+
+                <label for="mensagem">Sua Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
